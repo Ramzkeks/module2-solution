@@ -2,6 +2,31 @@
 <html>
 <head>
   <title>Мой сайт</title>
+  <style>
+    /* Стили для десктопной версии (ширина >= 992px) */
+    @media (min-width: 992px) {
+      /* Ваши стили для десктопной версии */
+      body {
+        background-color: lightblue;
+      }
+    }
+
+    /* Стили для планшетной версии (ширина между 768px и 991px) */
+    @media (min-width: 768px) and (max-width: 991px) {
+      /* Ваши стили для планшетной версии */
+      body {
+        background-color: lightgreen;
+      }
+    }
+
+    /* Стили для мобильной версии (ширина <= 767px) */
+    @media (max-width: 767px) {
+      /* Ваши стили для мобильной версии */
+      body {
+        background-color: lightpink;
+      }
+    }
+  </style>
 </head>
 <body>
   <h1>Привет, мир!</h1>
