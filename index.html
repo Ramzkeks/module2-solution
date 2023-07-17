@@ -1,34 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Мой сайт</title>
+  <title>Restaurant</title>
   <style>
-    /* Стили для десктопной версии (ширина >= 992px) */
-    @media (min-width: 992px) {
-      /* Ваши стили для десктопной версии */
-      body {
-        background-color: lightblue;
-      }
+    body {
+      font-family: Garamond, sans-serif;
+      margin: 0;
+      padding: 0;
     }
-
-    /* Стили для планшетной версии (ширина между 768px и 991px) */
-    @media (min-width: 768px) and (max-width: 991px) {
-      /* Ваши стили для планшетной версии */
-      body {
-        background-color: lightgreen;
-      }
+    h1 {
+      font-family: "Tahoma", Arial, sans-serif;
+      text-align: center;
+      margin-top: 40px;
     }
-
-    /* Стили для мобильной версии (ширина <= 767px) */
-    @media (max-width: 767px) {
-      /* Ваши стили для мобильной версии */
-      body {
-        background-color: lightpink;
-      }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 55px;
+      margin: 20px;
+      margin-top: 40px;
+    }
+    .section {
+      flex: 0 1 calc(33.33% - 20px);
+      padding: 20px;
+      height: 200px;
+      background-color: rgb(142, 136, 136);
+      border: 1px solid black;
+      position: relative;
+    }
+    .section h2 {
+      margin: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 5px;
+      background-color: lightgreen;
+      color: white;
+      border: 1px solid black;
+      font-family: "Courier", Arial, sans-serif;
+    }
+    .section p {
+      margin-top: 40px;
+      font-size: 20px;
+      text-align: justify;
     }
   </style>
 </head>
 <body>
-  <h1>Привет, мир!</h1>
+  <h1>Our Menu</h1>
+
+  <div class="container">
+    <div class="section">
+      <h2 style="background-color: rgb(199, 90, 161); color: black;">Chicken</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae ultricies erat. Sed ultrices maximus lacinia. Quisque viverra sollicitudin ipsum eu pharetra. Phasellus ac molestie nibh. Donec in justo nisi. Proin vel accumsan arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+    </div>
+    <div class="section">
+      <h2 style="background-color: red; color: white;">Beef</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae ultricies erat. Sed ultrices maximus lacinia. Quisque viverra sollicitudin ipsum eu pharetra. Phasellus ac molestie nibh. Donec in justo nisi. Proin vel accumsan arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+    </div>
+    <div class="section">
+      <h2 style="background-color: rgb(211, 203, 46); color: black;">Sushi</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae ultricies erat. Sed ultrices maximus lacinia. Quisque viverra sollicitudin ipsum eu pharetra. Phasellus ac molestie nibh. Donec in justo nisi. Proin vel accumsan arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+    </div>
+  </div>
 </body>
 </html>
